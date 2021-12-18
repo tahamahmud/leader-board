@@ -1,0 +1,249 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Slabo+27px&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@1,500&display=swap');
+
+/* common styles or utilites */
+body{
+    background-color: #9F9F9F;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Slabo 27px', serif;
+    margin: 0%;
+    padding: 0%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containar{
+    height: 620px;
+    width: 840px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 21px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin: 30px 0 30px 0;
+} 
+.sectio-titel{
+    color: #562EFF;
+    font-size: 24px;
+    margin: 0 0 40px 0;
+}
+
+
+
+
+/* --------------------------
+Top players and blogs start 
+-----------------------------*/
+/* top player stlye start */
+.top-players-and-bologs{
+    
+    
+}
+
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+   
+
+}
+
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+}
+.player-name{
+    padding-left: 16px;
+    font-size: 18px;
+}
+/* top player end */
+
+
+
+/* top blog start  */
+.top-blog{
+
+}
+.blogs{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+}
+.blog{
+    display: flex;
+    padding: 0 80px 26px 0;
+}
+.thumbnel{
+ padding-right: 16px;
+}
+.thumbnel img{
+    height: 117px;
+    width: 177px;
+}
+.bolo-info{
+
+}
+.bolog-titel{
+
+}
+.author{
+    font-size: 16px;
+    color: #9F9F9F;
+   }
+
+.author a{
+ text-decoration: none;
+ font-size: 16px;
+ color: #562EFF;
+ ;
+}
+
+/* top bolog end  */
+
+/*---------------------------
+ top-players-and-bologs end 
+----------------------------- */
+
+
+
+/* ----------------------------
+       lates-cours start 
+------------------------------ */
+.lates-course{
+    height: 332px;
+    width: 840px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 21px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.course:hover{
+    background-color: rgb(247, 229, 159);
+}
+.course{
+    border: 1px solid rgb(236, 239, 243);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px  rgb(236, 239, 243) ;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif; 
+    height: 270px;
+    width: 258px;
+    
+}
+#margin-of-course{
+    margin: 0 24px 0 24px;
+}
+.thumbnel-of-courses img{
+    height: 104px;
+    width: 224px;
+    padding: 17px;
+}
+.course-info{
+
+}
+.course-titel{
+    margin: 0 0 7px 17px;
+
+}
+.course-author{
+    font-size: 15px;
+    color: #ED6B4F;
+    margin: 0;
+    padding-left: 17px;
+}
+.ratting{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding-left: 13px;
+}
+.star{
+    padding-right: 8px;
+   font-size: 12px;
+}
+.star i{
+    color: #FFC014;
+    
+
+}
+
+#enth-child{
+    color:  #AEAEAE;
+    
+}
+.time{
+    color:  #FF4A60;    
+    background-color: #FFE4E8;
+    border-radius: 20px;
+    margin-left: 24px;
+    padding: 5px;
+}
+
+/* -----------------------------
+           midea Quyari
+------------------------------- */
+
+/* For Mobile Devise */
+@media only screen and (max-width:688px){
+   
+    .containar{
+        width: 100%;
+        height: auto;
+    }
+    .sectio-titel, .blog, .courses{
+        margin-left: 10%;
+    }
+    .top-players, .blogs, .courses{  
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog {
+        flex-direction: column;
+    }
+    
+    .lates-course{
+        width: 100%;
+        height: auto;
+    }
+    #margin-of-course{
+        margin:0 ;
+    }
+}
+
+/* Tablate Deviceses */
+@media only screen and (min-width:687px) and (max-width:993px) {
+   
+    .containar{
+        width: 100%;
+        height: auto;
+    }
+    .sectio-titel, .blog, .course{
+        margin-left: 10%;
+    }
+    .top-players, .blogs, .courses{  
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player {
+        flex-direction: column;
+    }
+    .lates-course{
+        width: 100%;
+        height: auto;
+    }
+    #margin-of-course{
+        margin:0 ;
+    }
+    
+  
+}
